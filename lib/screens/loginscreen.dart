@@ -30,7 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
               padding: EdgeInsets.only(left: 20.0),
               child: Text(
                 "Log In",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+                style: TextStyle(fontFamily: "Poppins", fontSize: 22),
               ),
             ),
             const SizedBox(
@@ -135,6 +135,23 @@ class _LoginScreenState extends State<LoginScreen> {
                 )
               ],
             ),
+
+           /* const Padding(
+                padding: EdgeInsets.only(right: 25.0, top: 10.0),
+                child: Align(
+                  alignment: Alignment.center,
+                  child: Material(
+                    color: Colors.transparent,
+                    child: Text(
+                      "or continue with",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Colors.black, fontSize: 15.0,
+                          fontFamily: "Poppins"),
+                    ),
+                  ),
+                )),*/
+
 
           ],
         ),
