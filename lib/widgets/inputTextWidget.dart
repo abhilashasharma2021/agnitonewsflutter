@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class InputTextWidget extends StatelessWidget {
   final String labelText;
   final IconData icon;
+  final Widget? suffixIcon;
   final bool obscureText;
   final keyboardType;
   final controller;
@@ -10,6 +11,7 @@ class InputTextWidget extends StatelessWidget {
       {required this.labelText,
         required this.icon,
         required this.obscureText,
+        required this.suffixIcon,
         required this.keyboardType,
         this.controller})
       : super();
@@ -32,6 +34,7 @@ class InputTextWidget extends StatelessWidget {
                 autofocus: false,
                 keyboardType: keyboardType,
                 decoration: InputDecoration(
+                  suffixIcon:suffixIcon ,
                   icon: Icon(
                     icon,
                     color: Colors.black,
@@ -41,11 +44,13 @@ class InputTextWidget extends StatelessWidget {
                   labelStyle: TextStyle(color: Colors.black54, fontSize: 16.0),
                   hintText: '',
                   enabledBorder: InputBorder.none,
-                  focusedBorder: const UnderlineInputBorder(
+                 /* focusedBorder: const UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.black54),
-                  ),
+                  ),*/
                   border: InputBorder.none,
                 ),
+
+
                 validator: (val) {
                   if (val!.isEmpty) {
                     return 'le champ de texte est vide!';
