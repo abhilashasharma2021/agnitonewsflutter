@@ -1,3 +1,4 @@
+import 'package:agnitonews/screens/BottomNavigation/bottomNavigationScreen.dart';
 import 'package:agnitonews/screens/signupscreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -102,7 +103,9 @@ class _LoginScreenState extends State<LoginScreen> {
               Container(
                 height: 45.0,
                 child: ElevatedButton(
-                  onPressed: () async {},
+                  onPressed: () => Navigator.of(context).push(
+                      MaterialPageRoute(
+                          builder: (context) => const BottomNavigationScreen())),
                   style: ElevatedButton.styleFrom(
                     primary: Colors.white,
                     elevation: 0.0,

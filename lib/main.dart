@@ -1,3 +1,4 @@
+import 'package:agnitonews/screens/ZoomDrawerNavigation/zoomdrawerscreen.dart';
 import 'package:agnitonews/screens/splash.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: Splash(),
+      home: ZoomDrawerScreen(),
     );
   }
 }
